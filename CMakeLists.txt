@@ -305,6 +305,7 @@ add_library(OurCoreLib OBJECT
         src/wiz-stats.c
         src/z-bitflag.c
         src/z-color.c
+        src/z-debug.c
         src/z-dice.c
         src/z-expression.c
         src/z-file.c

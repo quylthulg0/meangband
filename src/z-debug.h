@@ -22,4 +22,6 @@
 #define notreached assert(0)
 #define testonly /* annotation only */
 
+void dbg_log_prep(const char *filepath, const char *filename, const char *message);
+
 #endif /* !Z_DEBUG_H */

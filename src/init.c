@@ -86,19 +86,19 @@ const char *ANGBAND_SYS = "xxx";
 /**
  * Various directories. These are no longer necessarily all subdirs of "lib"
  */
-char *ANGBAND_DIR_GAMEDATA;
-char *ANGBAND_DIR_CUSTOMIZE;
-char *ANGBAND_DIR_HELP;
-char *ANGBAND_DIR_SCREENS;
-char *ANGBAND_DIR_FONTS;
-char *ANGBAND_DIR_TILES;
-char *ANGBAND_DIR_SOUNDS;
-char *ANGBAND_DIR_ICONS;
-char *ANGBAND_DIR_USER;
-char *ANGBAND_DIR_SAVE;
-char *ANGBAND_DIR_PANIC;
-char *ANGBAND_DIR_SCORES;
-char *ANGBAND_DIR_ARCHIVE;
+char *ANGBAND_DIR_GAMEDATA = NULL;
+char *ANGBAND_DIR_CUSTOMIZE = NULL;
+char *ANGBAND_DIR_HELP = NULL;
+char *ANGBAND_DIR_SCREENS = NULL;
+char *ANGBAND_DIR_FONTS = NULL;
+char *ANGBAND_DIR_TILES = NULL;
+char *ANGBAND_DIR_SOUNDS = NULL;
+char *ANGBAND_DIR_ICONS = NULL;
+char *ANGBAND_DIR_USER = NULL;
+char *ANGBAND_DIR_SAVE = NULL;
+char *ANGBAND_DIR_PANIC = NULL;
+char *ANGBAND_DIR_SCORES = NULL;
+char *ANGBAND_DIR_ARCHIVE = NULL;
 
 static const char *slots[] = {
 	#define EQUIP(a, b, c, d, e, f) #a,

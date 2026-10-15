@@ -14,6 +14,7 @@
 
 #include "h-basic.h"
 #include "z-bitflag.h"
+#include "z-debug.h"
 #include "z-file.h"
 #include "z-rand.h"
 #include "z-util.h"
@@ -277,5 +278,7 @@ extern void init_arrays(void);
 extern void create_needed_dirs(void);
 extern bool init_angband(void);
 extern void cleanup_angband(void);
+
+#define dbg_log(filename, message) dbg_log_prep(ANGBAND_DIR_USER, filename, message)
 
 #endif /* INCLUDED_INIT_H */
