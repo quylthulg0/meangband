@@ -336,7 +336,7 @@ errr grab_int_range(int *lo, int *hi, const char *range, const char *sep)
 	if (sep) {
 		size_t nonwhite_offset;
 
-		pe = strstr(range, sep);
+		pe = (char *)strstr(range, sep);
 		if (!pe) {
 			return PARSE_ERROR_INVALID_VALUE;
 		}
