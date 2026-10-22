@@ -59,6 +59,7 @@ void sound(int type);
 void bell(void);
 void msg(const char *fmt, ...);
 void msgt(unsigned int type, const char *fmt, ...);
+void debug_msg(const char *fmt, ...);
 
 
 #endif /* !INCLUDED_Z_MSG_H */

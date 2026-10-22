@@ -445,6 +445,24 @@ void msgt(unsigned int type, const char *fmt, ...)
 }
 
 
+void debug_msg(const char *fmt, ...)
+{
+	if (!player->wizard) return;
+
+	va_list vp;
+	char buf[1024];
+	va_start(vp, fmt);
+	vstrnfmt(buf, sizeof(buf), fmt, vp);
+	va_end(vp);
+
+	/* Fail if messages not loaded */
+	if (!messages) return;
+
+	/* Add to message log */
+	message_add(buf, MSG_GENERIC);
+}
+
+
 struct init_module messages_module = {
 	.name = "messages",
 	.init = messages_init,
